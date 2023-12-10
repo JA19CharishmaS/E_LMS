@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+  <table class="table table-primary col-sm-8">
+    <tr>
+      <th>SNO.</th>
+      <th>Book ID</th>
+      <th>Book Title</th>
+      <th>Author</th>
+      <th>Subject</th>
+      <th>ISBN</th>
+      <th>Publisher</th>
+      <th>Publication Date</th>
+     
+      <th>Available Quantity</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let book of bookList; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ book.bookid }}</td>
+      <td>{{ book.booktitle }}</td>
+      <td>{{ book.bookauthor }}</td>
+      <td>{{ book.subject }}</td>
+      <td>{{ book.isbn }}</td>
+      <td>{{ book.publisher }}</td>
+      <td>{{ book.publicationdate }}</td>
+     
+      <td>{{ book.availablequantity }}</td>
+      <td>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger" style="background-color: red" (click)="deleteBook(book.bookid)">Delete</button>
+          <button type="button" class="btn btn-info" (click)="updateBook(book.bookid)">Update</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="custom-button">
+    <button type="submit" class="btn btn-primary transparent-button" (click)="goBack()" style="margin-left: 20px;"><i class="fa-solid fa-arrow-left"></i>Back</button>
+    </div>
+   
+  
+</div>
+

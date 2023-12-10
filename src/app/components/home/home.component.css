@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #333; 
+}
+
+.navbar a {
+  color: white; 
+}
+.navbar a:hover
+{
+  background-color: transparent;
+  color:gray;
+}
+.navbar a:visited {
+  color: white; 
+}
+
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+.navbar-nav .btn {
+  margin-right: 10px; 
+}
+.gradient-custom {
+  /* fallback for old browsers */
+  background:  #a48cb380;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-left: 10px; /* Adjust this value as needed */
+}
+.home {
+    margin-top: 200px;
+    font-size: 60px;
+    text-align:center;
+    height:270px;
+}

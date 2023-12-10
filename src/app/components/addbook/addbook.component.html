@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+<br>
+<div  class="container  col-lg-6">
+    <h2 style="text-align:center">Add Books Here</h2>
+    <form #myform="ngForm" class="container col-md-4" (ngSubmit)="addBook(myform.value)">
+    <div class="form-group">
+        <label>bookid</label>
+        <input type="text" class="form-control" #bookid="ngModel" name="bookid" required ngModel>
+        <span style="color: red;" *ngIf="bookid.touched && bookid.invalid">bookid ID is Mandatory</span>
+    </div>
+
+   
+
+    <div class="form-group">
+        <label>availablequantity</label>
+        <input type="number" class="form-control" #availablequantity="ngModel" name="availablequantity"  required ngModel>
+        <span style="color: red;" *ngIf="availablequantity.touched && availablequantity.invalid">Available Quantity is Mandatory</span>
+        <span style="color: red;" *ngIf="availablequantity.value <= 0 && availablequantity.touched">Book quantity must be greater than 0</span>
+    </div>
+    <div class="form-group">
+        <label>booktitle</label>
+        <input type="text" class="form-control" #booktitle="ngModel" name="booktitle" required ngModel>
+        <span style="color: red;" *ngIf="booktitle.touched && booktitle.invalid">book title is Mandatory</span>
+    </div>
+    <div class="form-group">
+        <label>bookauthor</label>
+        <input type="text" class="form-control" #bookauthor="ngModel" name="bookauthor" required ngModel>
+        <span style="color: red;" *ngIf="bookauthor.touched && bookauthor.invalid">book author is Mandatory</span>
+    </div>
+    <div class="form-group">
+        <label>subject</label>
+        <input type="text" class="form-control" #subject="ngModel" name="subject" required ngModel>
+        <span style="color: red;" *ngIf="subject.touched && subject.invalid">subject is Mandatory</span>
+    </div>
+    <div class="form-group">
+        <label>isbn</label>
+        <input type="text" class="form-control" #isbn="ngModel" name="isbn" required ngModel>
+        <span style="color: red;" *ngIf="isbn.touched && isbn.invalid">isbn  is Mandatory</span>
+    </div>
+    <div class="form-group">
+        <label>publisher</label>
+        <input type="text" class="form-control" #publisher="ngModel" name="publisher" required ngModel>
+        <span style="color: red;" *ngIf="publisher.touched && publisher.invalid">publisher is Mandatory</span>
+    </div>
+    <div class="form-group">
+        <label>Publication Date:</label>
+        <input type="date" class="form-control" #publicationdateControl="ngModel" name="publicationdate" required [(ngModel)]="publicationDate">
+        <span style="color: red;" *ngIf="publicationdateControl.touched && publicationdateControl.invalid">Publication Date is Mandatory</span>
+        <span style="color: red;" *ngIf="publicationdateControl.touched && isInvalidPublicationDate()">Publication Date must be in the Past</span>
+    </div>
+    
+
+    <button type="submit" class="btn btn-primary" [disabled]="myform.invalid">Submit</button>
+<button type="submit" class="btn btn-primary" (click)="goBack()" style="margin-left: 20px;">Back</button>
+
+
+</form>
+</div>

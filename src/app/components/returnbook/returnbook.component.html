@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<br>
+<div  class="container  col-lg-6">
+    <h2 style="text-align:center">Return Books</h2>
+    <form #myform="ngForm" class="container col-md-4" (ngSubmit)="returnBook(myform.value)">
+    <div class="form-group">
+        <label>Borrowing ID:</label>
+        <input type="text" class="form-control" #borrowingidControl="ngModel" name="borrowingid" ngModel>
+        
+    </div>
+
+    
+
+    <div class="form-group">
+        <label>Return Date:</label>
+        <input type="date" class="form-control" #returndateControl="ngModel" name="returndate" required [(ngModel)]="returnDate">
+        <span style="color: red;" *ngIf="returndateControl.touched && returndateControl.invalid">Return Date is Mandatory</span>
+        <span style="color: red;" *ngIf="returndateControl.touched && isInvalidReturnDate()">Return Date must be Today</span>
+    </div>
+
+    <div class="form-group">
+        <label>Member ID:</label>
+        <input type="text" class="form-control" #memberidControl="ngModel" name="memberid" required ngModel>
+        <span style="color: red;" *ngIf="memberidControl.touched && memberidControl.invalid">Member ID is Mandatory</span>
+      </div>
+  
+      <div class="form-group">
+        <label>Book ID:</label>
+        <input type="text" class="form-control" #bookidControl="ngModel" name="bookid" required ngModel>
+        <span style="color: red;" *ngIf="bookidControl.touched && bookidControl.invalid">Book ID is Mandatory</span>
+      </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="myform.invalid">Return</button>
+<button type="submit" class="btn btn-primary" (click)="goBack()" style="margin-left: 20px;">Back</button>
+
+
+</form>
+</div>
+

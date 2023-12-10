@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark gradient-custom">
+  <h5 class="mr-4">
+    <span style="color:white; font-family: 'Great Vibes', cursive; font-size:40px;  vertical-align: 5px;">BiBlio</span>
+    <b><span style="color:black; font-size:20px; font-family: 'Great Vibes', cursive;">Hub</span></b>
+  </h5>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button><br>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item text-center mx-2 mx-lg-1">
+        <a class="nav-link active" aria-current="page" routerLink="/">
+          <div>
+            <i class="fas fa-home fa-lg mb-1"></i>
+          </div>
+          Home
+        </a>
+      </li>
+      <li class="nav-item text-center mx-2 mx-lg-1">
+        <a class="nav-link" [routerLink]="['/about']">
+          <div>
+            <i class="fas fa-info-circle"></i>
+          </div>About Us
+        </a>
+      </li>
+      <li class="nav-item text-center mx-2 mx-lg-1">
+        <a class="nav-link" [routerLink]="['/contact']">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+          </div>Contact
+        </a>
+      </li>
+    
+    <li class="nav-item text-center mx-2 mx-lg-1" style="margin-left: 20px;">
+      <a class="nav-link" [routerLink]="['/avilablebooks']" >
+        <div>
+          <i class="fa-sharp fa-solid fa-book"></i>
+        </div>
+        Books Categories
+      </a>
+    </li>
+  </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown" >
+        <div class="btn-group">
+          <button type="button" class="btn btn-success dropdown-toggle custom-login-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Login</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black; left: auto; right: 0;">
+            <a class="dropdown-item" [routerLink]="['/userlogin']">User Login</a>
+            <a class="dropdown-item" [routerLink]="['/login']">Admin Login</a>
+          </div>
+        </div>&nbsp;
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+

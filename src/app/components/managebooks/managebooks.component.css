@@ -1,0 +1,49 @@
+/* CSS for smaller width and white-transparent color cards */
+ 
+.card {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 4px 4px white;
+  width: 300px; 
+  text-align:center;
+}
+.card button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.card button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.custom-button
+{
+  margin-left:595px;
+}
+
+.card button:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Lighter transparent white on hover */
+}
+
+.transparent-button {
+  background-color: transparent;
+  border-color: transparent;
+  color: black; 
+  font-size:20px;
+}
+
+.transparent-button:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Transparent color on hover */
+}
+

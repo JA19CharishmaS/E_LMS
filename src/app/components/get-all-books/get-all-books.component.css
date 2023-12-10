@@ -1,0 +1,17 @@
+.custom-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .transparent-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: black; 
+    font-size:20px;
+  }
+  
+  .transparent-button:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Transparent color on hover */
+  }
+  
+  

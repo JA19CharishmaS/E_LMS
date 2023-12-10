@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<br>
+<div  class="container  col-lg-6">
+    <h2 style="text-align:center">Borrow Books</h2>
+    <form #myform="ngForm" class="container col-md-4" (ngSubmit)="submitForm(myform.value)">
+    <div class="form-group">
+        <label>Borrowing ID:</label>
+        <input type="text" class="form-control" #borrowingidControl="ngModel" name="borrowingid"  ngModel>
+       
+    </div>
+
+    <div class="form-group">
+        <label>Due Date:</label>
+        <input type="date" class="form-control" #duedateControl="ngModel" name="duedate" required [(ngModel)]="dueDate">
+        <span style="color: red;" *ngIf="duedateControl.touched && duedateControl.errors?.['required']">Due Date is Mandatory</span>
+        <span style="color: red;" *ngIf="duedateControl.touched && isInvalidDueDate()">Due Date must be in the Future</span>
+    </div>
+    
+    
+
+    
+
+    <div class="form-group">
+        <label>Member ID:</label>
+        <input type="text" class="form-control" #memberidControl="ngModel" name="memberid" required ngModel>
+        <span style="color: red;" *ngIf="memberidControl.touched && memberidControl.invalid">Member ID is Mandatory</span>
+      </div>
+  
+      <div class="form-group">
+        <label>Book ID:</label>
+        <input type="text" class="form-control" #bookidControl="ngModel" name="bookid" required ngModel>
+        <span style="color: red;" *ngIf="bookidControl.touched && bookidControl.invalid">Book ID is Mandatory</span>
+      </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="myform.invalid">Submit</button>
+<button type="submit" class="btn btn-primary" (click)="goBack()" style="margin-left: 20px;">Back</button>
+
+
+</form>
+</div>

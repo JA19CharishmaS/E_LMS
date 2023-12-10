@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div>
+    <form #myForm="ngForm" (ngSubmit)="onDelete(myForm.value)">
+      <label for="itemId">Enter Book ID to Delete:</label>
+      <input type="text" class="form-control" #bookid="ngModel" name="bookid" required ngModel>
+      <button type="submit">Delete Book</button>
+    </form>
+  </div>
+  
+  

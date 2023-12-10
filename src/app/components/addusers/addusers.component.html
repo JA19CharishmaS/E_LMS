@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="container col-lg-3" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); padding: 20px; margin-top: 50px;">
+    <h2 style="text-align: center;">Add User</h2>
+    <form [formGroup]="userRegistrationForm" (ngSubmit)="registerUser()" style="margin-top: 20px;">
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" formControlName="firstname" class="form-control" required>
+        <span style="color:red" *ngIf="userRegistrationForm?.get('firstname')?.touched && userRegistrationForm?.get('firstname')?.invalid">First Name is required</span>
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" formControlName="lastname" class="form-control" required>
+        <span style="color:red" *ngIf="userRegistrationForm?.get('lastname')?.touched && userRegistrationForm?.get('lastname')?.invalid">Last Name is required</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" class="form-control" required email>
+        <span style="color:red" *ngIf="userRegistrationForm?.get('email')?.touched && userRegistrationForm?.get('email')?.invalid">Email is required</span>
+      </div>
+      <div class="form-group">
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" formControlName="userName" class="form-control" required>
+        <span style="color:red" *ngIf="userRegistrationForm?.get('userName')?.touched && userRegistrationForm?.get('userName')?.invalid">
+          User Name is required
+      </span>
+    </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" class="form-control" required minlength="6">
+        <span style="color:red" *ngIf="userRegistrationForm?.get('password')?.touched && userRegistrationForm?.get('password')?.invalid">Password is required</span>
+      </div>
+      <div class="d-flex justify-content-center mt-auto">
+        <button type="submit" [disabled]="userRegistrationForm!.invalid">Add user</button>
+        <button type="submit" class="btn btn-primary" (click)="goBack()" style="margin-left: 20px;">Back</button>
+      </div>
+    </form>
+  </div>
+  

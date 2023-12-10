@@ -1,0 +1,40 @@
+<app-home></app-home>
+<br>
+<br>
+<div class="container" style="width: 1500px; overflow-x: auto;">
+<div class="row">
+    <div class="col-md-3 mb-2" style="margin-left:150px;">
+      <div class="card" style="width: 250px; height: 380px;">
+        <img class="card-img-top custom-card-img" src="https://cdn5.vectorstock.com/i/1000x1000/94/34/story-book-child-educational-books-with-stories-vector-26089434.jpg" style="max-height: 150px;" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">StoryBooks</h5>
+          <p class="card-text">We Can Also Have Story Books Available Here</p>
+          <a  (click)="handleBorrowBooksClick()" [routerLink]="['/userlogin']" class="btn btn-primary" style="color:black;">BorrowBooks</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 mb-3">
+      <div class="card" style="width: 250px; height: 380px;">
+        <img class="card-img-top custom-card-img" src="https://mbdbooks.in/media/catalog/product/cache/cb2f9cecf2b177f23f977553df7684cd/h/0/h0326a8752_impressions_gk-7_with_neg_uv_24-11-22_ar-1.jpg" style="max-height: 150px;" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">General Knowledge Books</h5>
+          <p class="card-text">All Type Of GK Books are Available</p>
+          <a (click)="handleBorrowBooksClick()" [routerLink]="['/userlogin']" class="btn btn-primary" style="color:black;">BorrowBooks</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 mb-3">
+      <div class="card" style="width: 250px; height: 380px;">
+        <img class="card-img-top custom-card-img" src="https://kbazar.s3.amazonaws.com/__sized__/products/quantitative_aptitude_dinesh_khattar-thumbnail-510x510-70.jpg" style="max-height: 150px;" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Aptitude Books</h5>
+          <p class="card-text">All Types of Aptitude available Here</p>
+          <a (click)="handleBorrowBooksClick()" [routerLink]="['/userlogin']" class="btn btn-primary" style="color:black;">BorrowBooks</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

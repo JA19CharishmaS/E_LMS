@@ -1,0 +1,37 @@
+<!-- Display All Books -->
+<app-navbar></app-navbar>
+
+<div class="container">
+    <table class="table table-primary col-sm-8">
+        <tr>
+            <th>SNO.</th>
+            <th>Book ID</th>
+            <th>Book Title</th>
+            <th>Book Author</th>
+            <th>Subject</th>
+            <th>ISBN</th>
+            <th>Publisher</th>
+            <th>Publication Date</th>
+            <th>QuantityAvailable</th>
+            <th>Borrow Here</th>
+        </tr> 
+        <tr *ngFor="let book of bookList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ book.bookid }}</td>
+            <td>{{ book.booktitle }}</td>
+            <td>{{ book.bookauthor }}</td>
+            <td>{{ book.subject }}</td>
+            <td>{{ book.isbn }}</td>
+            <td>{{ book.publisher }}</td>
+            <td>{{ book.publicationdate }}</td>
+            <td>{{ book.availablequantity }}</td>
+            <td>
+                <button type="button" class="btn btn-success" (click)="borrowBook(book.bookid)">Borrow Book</button>
+            </td>
+        </tr>
+    </table>
+    <div class="custom-button">
+        <button type="submit" class="btn btn-primary transparent-button" (click)="goBack()" style="margin-left: 20px;"><i class="fa-solid fa-arrow-left"></i>Back</button>
+    </div>
+</div>
+

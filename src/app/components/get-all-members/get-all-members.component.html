@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+  <table class="table table-primary col-sm-8">
+    <tr>
+      <th>SNO.</th>
+      <th>Borrowing ID</th>
+      <th>Due Date</th>
+      <th>Return Date</th>
+      <th>Book ID</th>
+      <th>Member ID</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let borrow of memberList; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ borrow.borrowingid }}</td>
+      <td>{{ borrow.duedate }}</td>
+      <td>{{ borrow.returndate }}</td>
+      <td>{{ borrow.book.bookid }}</td>
+      <td>{{ borrow.member.memberid }}</td>
+      <td>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger" style="background-color: red" (click)="deleteMember(borrow.borrowingid)">Delete</button>
+          
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="custom-button">
+    <button type="submit" class="btn btn-primary transparent-button" (click)="goBack()" style="margin-left: 20px;"><i class="fa-solid fa-arrow-left"></i>Back</button>
+    </div>
+ 
+   
+  
+</div>

@@ -1,0 +1,63 @@
+<app-navbar></app-navbar>
+<div class="dashboard">
+  <!-- Search Bar -->
+  <div class="search-bar-container">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <form class="d-flex" #searchInput="ngForm" (ngSubmit)="findBooks(searchInput)">
+          <input class="form-control me-2" type="search" name="data" ngModel placeholder="Search Book Here By book title" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <h3>Borrow Books</h3>
+          <p style="color:black">Borrow Books Here</p>
+          <button style="color:black" class="custom-button" (click)="borrowBooks()">Borrow Books</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <h3>Return Book</h3>
+          <p style="color:black">Return Book Here.</p>
+          <button style="color:black" (click)="returnBooks()">Return Books</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <h3>View Books</h3>
+          <p style="color:black">View All Books Here</p>
+          <button  style="color:black"class="custom-button" (click)="displayall()">View Books</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+   <!--<div class="card">
+      <h3>View My Account</h3>
+      <p>Access your account details and transaction history.</p>
+      <button (click)="viewAccount()">View Account</button>
+    </div>
+
+    <div class="card">
+      <h3>Pay Fine</h3>
+      <p>Clear any fines or dues on your account.</p>
+      <button (click)="payFine()">Pay Fine</button>
+    </div>-->
+
+
+    
+  
+    
+
+    
+  
