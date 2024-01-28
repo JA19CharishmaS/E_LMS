@@ -131,13 +131,33 @@ public class BorrowingServiceImp implements IBorrowingService {
 
           
 	}
-	private void updateBookStatusInReports(long bookId, String status) {
-	    Optional<Reports> optionalReport = reportsRepository.findById(bookId);
+	/*private void updateBookStatusInReports(long bookId, String status) {
+	 * 
+	 * Optional<Reports> optionalReport = reportsRepository.findById(bookId);
 	    if (optionalReport.isPresent()) {
 	        Reports report = optionalReport.get();
 	        report.setBookstatus(status);
 	        reportsRepository.save(report);
 	    }
 	}
+	*/
+	
+	private void updateBookStatusInReports(long bookId, String status) {
+	    Optional<Reports> optionalReport = reportsRepository.findById(bookId);
+
+	    if (optionalReport.isPresent()) {
+	        Reports report = optionalReport.get();
+	        report.setBookstatus(status);
+	        reportsRepository.save(report);
+	        logger.info("Book status updated in reports for bookId: {} to status: {}", bookId, status);
+	    } else {
+	        // Handle the case when the Reports entity is not found
+	        logger.warn("Reports entity not found for bookId: {}", bookId);
+	        // You can choose to throw an exception or handle it differently based on your requirements
+	        // For this example, let's just log a warning.
+	    }
+	}
+
+	    
 
 }

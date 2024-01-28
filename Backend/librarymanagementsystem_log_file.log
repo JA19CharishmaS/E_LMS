@@ -1,0 +1,73 @@
+2024-01-28T11:47:20.178+05:30  INFO 8408 --- [main] com.hexaware.lms.CaseStudyApplication    : Starting CaseStudyApplication using Java 17.0.9 with PID 8408 (C:\Users\Admin\Desktop\hexaware\java\E_LMS\Backend\target\classes started by Admin in C:\Users\Admin\Desktop\hexaware\java\E_LMS\Backend)
+2024-01-28T11:47:20.189+05:30  INFO 8408 --- [main] com.hexaware.lms.CaseStudyApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-28T11:47:22.890+05:30  INFO 8408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-28T11:47:23.024+05:30  INFO 8408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 7 JPA repository interfaces.
+2024-01-28T11:47:24.316+05:30  INFO 8408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-01-28T11:47:24.339+05:30  INFO 8408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-28T11:47:24.339+05:30  INFO 8408 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2024-01-28T11:47:24.574+05:30  INFO 8408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-28T11:47:24.575+05:30  INFO 8408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4284 ms
+2024-01-28T11:47:24.925+05:30  INFO 8408 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-28T11:47:25.083+05:30  INFO 8408 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2024-01-28T11:47:25.524+05:30  WARN 8408 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-01-28T11:47:26.036+05:30  INFO 8408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-28T11:47:26.796+05:30  INFO 8408 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ddb302
+2024-01-28T11:47:26.801+05:30  INFO 8408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-28T11:47:26.971+05:30  INFO 8408 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-01-28T11:47:29.213+05:30  INFO 8408 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-28T11:47:29.231+05:30  INFO 8408 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-28T11:47:30.470+05:30  WARN 8408 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-28T11:47:31.724+05:30  INFO 8408 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c08461b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c37c36, org.springframework.security.web.context.SecurityContextHolderFilter@24ffe853, org.springframework.security.web.header.HeaderWriterFilter@2f08e6d3, org.springframework.web.filter.CorsFilter@2060df8, org.springframework.security.web.authentication.logout.LogoutFilter@48064a5a, com.hexaware.lms.filter.JwtAuthFilter@f09c282, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22d23c27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f1b8770, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e38329d, org.springframework.security.web.session.SessionManagementFilter@771b2b5b, org.springframework.security.web.access.ExceptionTranslationFilter@5dfd4fac, org.springframework.security.web.access.intercept.AuthorizationFilter@5c94d4b8]
+2024-01-28T11:47:32.305+05:30  INFO 8408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-01-28T11:47:32.323+05:30  INFO 8408 --- [main] com.hexaware.lms.CaseStudyApplication    : Started CaseStudyApplication in 12.888 seconds (process running for 14.411)
+2024-01-28T11:47:52.396+05:30  INFO 8408 --- [http-nio-8182-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-28T11:47:52.397+05:30  INFO 8408 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-28T11:47:52.399+05:30  INFO 8408 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-28T11:48:53.872+05:30  INFO 8408 --- [http-nio-8182-exec-9] c.hexaware.lms.service.MemberServiceImp  : Added Member Data Into Tablecom.hexaware.lms.dto.MemberDTO@30e04910
+2024-01-28T12:35:00.124+05:30  WARN 8408 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s498ms800µs500ns).
+2024-01-28T13:18:18.926+05:30  WARN 8408 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m48s564ms228µs100ns).
+2024-01-28T14:47:29.101+05:30  WARN 8408 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m39s894ms973µs800ns).
+2024-01-28T15:42:26.133+05:30  INFO 8408 --- [RMI TCP Connection(151)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-01-28T15:42:26.153+05:30  INFO 8408 --- [RMI TCP Connection(151)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-01-28T15:42:26.155+05:30  INFO 8408 --- [RMI TCP Connection(151)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-01-28T15:42:26.159+05:30  WARN 8408 --- [RMI TCP Connection(151)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+2024-01-28T15:42:26.169+05:30  INFO 8408 --- [RMI TCP Connection(151)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-28T15:42:26.172+05:30  INFO 8408 --- [RMI TCP Connection(151)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-28T15:42:26.179+05:30  INFO 8408 --- [RMI TCP Connection(151)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-28T18:53:52.730+05:30  INFO 4072 --- [main] com.hexaware.lms.CaseStudyApplication    : Starting CaseStudyApplication using Java 17.0.9 with PID 4072 (C:\Users\Admin\Desktop\hexaware\java\E_LMS\Backend\target\classes started by Admin in C:\Users\Admin\Desktop\hexaware\java\E_LMS\Backend)
+2024-01-28T18:53:52.736+05:30  INFO 4072 --- [main] com.hexaware.lms.CaseStudyApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-28T18:53:54.673+05:30  INFO 4072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-28T18:53:54.857+05:30  INFO 4072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 7 JPA repository interfaces.
+2024-01-28T18:53:56.196+05:30  INFO 4072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-01-28T18:53:56.223+05:30  INFO 4072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-28T18:53:56.225+05:30  INFO 4072 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2024-01-28T18:53:56.446+05:30  INFO 4072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-28T18:53:56.447+05:30  INFO 4072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3611 ms
+2024-01-28T18:53:56.748+05:30  INFO 4072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-28T18:53:56.879+05:30  INFO 4072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2024-01-28T18:53:57.303+05:30  WARN 4072 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-01-28T18:53:57.580+05:30  INFO 4072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-28T18:53:58.254+05:30  INFO 4072 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70777a65
+2024-01-28T18:53:58.264+05:30  INFO 4072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-28T18:53:58.502+05:30  INFO 4072 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-01-28T18:54:00.245+05:30  INFO 4072 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-28T18:54:00.266+05:30  INFO 4072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-28T18:54:01.408+05:30  WARN 4072 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-28T18:54:02.679+05:30  INFO 4072 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a8d03ce, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14ecd835, org.springframework.security.web.context.SecurityContextHolderFilter@5ac8916d, org.springframework.security.web.header.HeaderWriterFilter@51a65f56, org.springframework.web.filter.CorsFilter@19c578bf, org.springframework.security.web.authentication.logout.LogoutFilter@7a5a26b7, com.hexaware.lms.filter.JwtAuthFilter@2dbc66f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16a7af5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@207358ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1eeb9e5c, org.springframework.security.web.session.SessionManagementFilter@433d5536, org.springframework.security.web.access.ExceptionTranslationFilter@4fb3c670, org.springframework.security.web.access.intercept.AuthorizationFilter@6015c745]
+2024-01-28T18:54:03.226+05:30  INFO 4072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-01-28T18:54:03.244+05:30  INFO 4072 --- [main] com.hexaware.lms.CaseStudyApplication    : Started CaseStudyApplication in 11.313 seconds (process running for 12.966)
+2024-01-28T19:15:08.792+05:30  INFO 4072 --- [http-nio-8182-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-28T19:15:08.794+05:30  INFO 4072 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-28T19:15:08.797+05:30  INFO 4072 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-28T19:46:20.765+05:30  INFO 4072 --- [http-nio-8182-exec-8] c.hexaware.lms.service.BookServiceImp    : Fetch Book Using Book Title  Aptitude by poorna
+2024-01-28T19:47:35.298+05:30  INFO 4072 --- [http-nio-8182-exec-10] c.hexaware.lms.service.BookServiceImp    : Fetch Book Using Book Title BalaGuru
+2024-01-28T19:47:46.826+05:30  INFO 4072 --- [http-nio-8182-exec-2] c.hexaware.lms.service.BookServiceImp    : Fetch Book Using Book Title Java

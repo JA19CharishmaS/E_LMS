@@ -55,7 +55,9 @@ const routes: Routes = [
   {path:'displaybooks',component:DisplaybooksComponent},
   {path:'updatebook',component:UpdateBookComponent},
   {path:'search/:booktitle',component:SearchbookComponent},
-  {path:'get-all-members',component:GetAllMembersComponent}
+  {path:'get-all-members',component:GetAllMembersComponent},
+{path: 'user-dashboard/:id',
+    component: UserdashboardComponent},
 ];
 
 @NgModule({

@@ -25,7 +25,7 @@ export class DisplaybooksComponent implements OnInit {
                               (list)=>{ 
                                 this.bookList = list; 
                                  console.log(list);
-                                alert("Displayed all books");
+                               
                               },
                               (error)=>{
                                 console.log("Something went wrong")});

@@ -11,7 +11,7 @@ import { Member } from '../model/member';
 export class UserService {
 
   constructor(private http: HttpClient) { }
-  baseURL: string = 'http://localhost:8181/api/';
+  baseURL: string = 'http://localhost:8182/api/';
 
   getGeneratedToken(requestBody: any):Observable<string> {
     return this.http.post<string>(this.baseURL + "login/userlogin", requestBody, { responseType: 'text' as 'json' });
@@ -31,7 +31,9 @@ export class UserService {
 
     return this.http.get<Book[]>(this.baseURL+"librarymanagementsystem/book/getbooks");
   }
-    
+  getUserById(memberid: number): Observable<Member> {
+    return this.http.get<Member>(`${this.baseURL}librarymanagementsystem/member/getbymemberid/${memberid}`);
+  }
 
 
 }

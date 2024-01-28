@@ -1,6 +1,12 @@
 <app-navbar></app-navbar>
+
 <div class="dashboard">
   <!-- Search Bar -->
+  
+  <div *ngIf="user">
+    <h2>Hi {{ user.userName }}, welcome to User Bookings!</h2>
+    <!-- Add your booking-related content here -->
+  </div>
   <div class="search-bar-container">
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
@@ -39,6 +45,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
   

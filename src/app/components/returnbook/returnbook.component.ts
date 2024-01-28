@@ -30,4 +30,5 @@ export class ReturnbookComponent {
         // Check if the due date is in the past
         return !! this.returnDate && this.returnDate !== currentDate;
     }
+    
 }
